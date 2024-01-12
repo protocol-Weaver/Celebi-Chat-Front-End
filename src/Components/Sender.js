@@ -4,7 +4,7 @@ import "./Sender.css";
 import {socket} from "../socket";
 import TextareaAutosize from 'react-textarea-autosize';
 
-const Sender = ({username})=>{
+const Sender = ({username, Receiver,setResponse,response})=>{
 let [Messages,setMessages] = useState("");
 const [show, setShow] = useState(false);
 const [index,setIndex] = useState(0);
@@ -18,15 +18,19 @@ const handleSubmit = (event) => {
     event.preventDefault();
     if (Messages !== "") {
       inputSanitizer(index);
-      console.log("this - >" , Messages);
-      socket.emit("chat message", Messages,username);
+      socket.emit("Add Message", username, Receiver, Messages);
+      if(response === 1){
+      setResponse(0);
+      }else{
+        setResponse(1);
+      }
       setMessages("");
     }
   };
   const newLineChecker = () => {
     let found = false;
     for(let i = 0; i< Messages.length; i++){
-      if(Messages.charCodeAt(i) != 10){
+      if(Messages.charCodeAt(i) !== 10){
           setIndex(i);
           found  = true;
           break;

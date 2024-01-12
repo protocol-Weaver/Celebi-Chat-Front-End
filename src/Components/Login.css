@@ -5,12 +5,14 @@
     padding: 20px 0;
     text-align: left;
     height : 100%;
+    display: flex;
+    flex-direction: column;
   }
   .form_wrapper {
     position: relative;
     top :20%;
     left : 17%;
-
+    height : 80%;
   }
   
   .form_input {
@@ -21,10 +23,12 @@
   .form_button {
     width: 60%;
     background-color: #fffafa;
-    color: black;
+    color: #777777;
   }  
   .form_button:hover{
-    background-color: #ffc3d2;
+    background-color: #79C7C5;
+    color : snow;
+    cursor: pointer;
   }
 
   .chatBox{
@@ -76,8 +80,105 @@ font-size: larger;
 
 
 .menu-icon{
-  position: relative;
-  left : 70%;
+  position: absolute;
+  left : 88%;
   top : 40%;
 }
 
+.Sign_In_Button{
+  border : none;
+  background-color: transparent;
+  color : green;
+  position: relative;
+  top : 3%;
+}
+
+.Sign_In_Button:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.Profile{
+  border-radius: 50%;
+  height : 8em;
+  width : 8em;
+  position: relative;
+  left : 34%;
+  top : 10%;
+}
+.Profile:hover {
+  cursor: pointer;
+  background-color: #777777;
+}
+
+.Image_Text{
+  position: relative;
+  left : 33%;
+  font-weight: 100;
+}
+
+.ProfileUploader{
+  height : 70%;
+  width : 50%;
+  left : 20%;
+  position: absolute;
+  top : 10%;
+  display: flex;
+  flex-direction: column;
+  gap : 15%;
+  border: solid 1px gray;
+}
+
+.pillButton{
+  display: inline-block;
+  border-radius: 16px;
+  padding: 10px 20px;
+  margin: 4px 2px;
+  width : 25%;
+  background-color: snow;
+  color : #777777;
+  border: 1px solid;
+}
+
+.pillButton:hover{
+  cursor: pointer;
+  background-color: #79C7C5;
+  color : snow;
+}
+
+.ImageUploader{
+  position: absolute;
+  left : 35%;
+  top : 30%;
+  display: none;
+}
+
+.logOut{
+position : absolute;
+left : 84%;
+top : 95%;
+background-color: black;
+width : 10%;
+height: 80%;
+text-align: center;
+opacity: 0.8;
+border-radius: 2vh;
+color : snow;
+}
+.logOut:hover{
+  cursor: pointer;
+  background-color: #79C7C5;
+}
+
+.menu-icon:hover {
+  cursor : pointer;
+  opacity: 0.7;
+}
+
+.Login_Header{
+  font-weight: 100;
+  font-size: x-large;
+  position: relative;
+  left: 20%;
+  top : 10%;
+}

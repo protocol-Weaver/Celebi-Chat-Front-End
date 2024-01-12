@@ -3,13 +3,14 @@ import Messager from "./Messager.js";
 import Sender from "./Sender.js";
 import "./App.css";
 import { useState,useEffect } from "react";
-import UserRegistration from "./Login.js";
+import RouterApp from "./Router.js";
 const App = ()=>{
 
 
     return(
         <>
-        <UserRegistration/>
+        <RouterApp/>
+        
         </>
     ) ;
 }

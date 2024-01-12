@@ -7,16 +7,19 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "antd": "^5.12.1",
+    "axios": "^1.6.5",
     "cors": "^2.8.5",
     "fs": "^0.0.1-security",
     "parse": "^4.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
+    "react-router-dom": "^6.21.1",
+    "react-scripts": "^5.0.1",
     "react-textarea-autosize": "^8.5.3",
     "socket-io": "^1.0.0",
     "socket.io-client": "^4.7.2",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "webpack": "^5.89.0"
   },
   "scripts": {
     "start": "react-scripts start",

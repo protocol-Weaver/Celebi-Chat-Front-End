@@ -35,4 +35,19 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         
-       
+        .SMessageList{
+          position: relative;
+          opacity : 1;
+          display:inline-block;
+          white-space: pre-line;
+          border-radius: 2vh;
+          background-color: #7777;
+          color : white;
+          width: auto;
+          height: auto;
+          padding : 1vh;
+          padding-top: 0%;
+          padding-bottom: 0%;
+          font-family: Arial, Helvetica, sans-serif;
+      }
+      
