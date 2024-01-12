@@ -1,0 +1,84 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+
+.userMenu{
+    width : 30%;
+    position: relative;
+    height: 100%;
+    font-family: 'Lato','sans-serif';
+    background-color: #fffafa;
+    border-right : 1px solid lightgray;
+}
+
+.navbar{
+    height : auto;
+    width : 100%;
+    background-color :transparent;
+    color : #777777;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap : 10%;
+    text-align: center;
+    padding-top : 5%;
+    padding-bottom: 5% ;
+    font-size: large;
+}
+
+.userList{
+height: auto;
+width : 100%;
+position: relative;
+display: flex;
+flex-direction: column;
+gap : 7%;
+}
+
+.users{
+    width : 100%;
+    height: auto;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    gap : 7%;
+    border-bottom: 1px solid #777777;
+    padding-top : 2%;
+    padding-bottom : 2%;
+}
+.users:hover{
+    background-color: lightgray;
+    cursor : pointer;
+}
+.profilePic{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    border-radius : 50%;
+}
+
+.search{
+    position: relative;
+    height : 8%;
+    background-color : lightslategray;
+}
+.userProfile{
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    position: relative;
+    border-radius : 50%;
+    left : 40%;
+}
+
+
+
+.userText{
+    text-align: center;
+    position: relative;
+    left : 10%;
+    text-transform: capitalize;
+    color: #777777;
+    font-family: 'Lato', sans-serif;
+}
